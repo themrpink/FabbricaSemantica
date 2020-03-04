@@ -1,0 +1,397 @@
+@charset "ISO-8859-1";
+
+body {
+	text-align:center;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+input, select {
+
+	margin:1% 0%
+}
+
+
+form {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    width:50%;
+    top:18%;
+}
+
+a {
+	padding:1%;
+}
+
+
+table {
+	margin: 0% 10% 10% 10%;
+	width:80%;
+	height: 80%;
+	padding: 5px;
+  	table-layout: fixed;
+    text-align:center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+td {
+  border: 1px solid black;
+  width: 100px;
+  height:50px;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+
+.signup_form {
+	width:35%;
+}
+
+.label {
+	display:inline;
+}
+
+.loginError {
+	color:red;
+}
+
+.PostError {
+	color:red;
+}
+
+#lingua {
+	border: none;
+  	border-bottom: 1px solid gray;
+}
+
+#radio {
+	text-align:center;
+}
+
+
+#mainForm {
+	display: block;
+	width : 100%;
+	margin: 5.5% 0%
+}
+
+#header {
+	background-image:url("bg5.jpg");
+	background-size: cover;
+	background-color: azure;
+	color: darkslateblue;
+
+	height:190px;
+	width : 100%;
+	font-size: 4em;
+	font-weight: bold;
+	margin: 0px;
+}
+
+#pageName{
+	font-family: Georgia, Helvetica, Arial, serif;
+	display:inline;
+	margin:0% 2% 0% 60%;
+	font-size : 20px;
+}
+
+#title {
+}
+
+#taskName{
+	margin: 0% 4%;
+	float:right;
+	font-size:25px;
+}
+#description {
+	margin:2% 5% 0% 5%;
+	font-style:italic;
+	text-overflow: ellipsis;
+	padding:0% 8% 3% 0%;
+}
+
+
+#word {
+	font-weight:bold;
+	font-size:2.2em;
+	font-style: normal;
+}
+
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #c4efff;
+  border-right: 16px solid #76e6eb;
+  border-bottom: 16px solid #c6ecf4;
+  border-left: 16px solid #82ccd2;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+/* barra di navigazione */
+
+.navbar {
+    background-color: azure;
+ 	width:100%;
+    justify-content: left;
+    margin:0px;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: blue;
+  padding: 3px 16px;
+}
+
+.navbar a:hover {
+  background-color: #ffffd5;
+}
+
+
+
+
+
+
+/* menu laterale */
+
+
+#mySidenav a {
+  position: absolute;
+  margin: 280px 0px;
+  left: -250px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 310px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+/* i vari link alle pagine del menu laterale a scomparsa*/
+
+#wa {
+  top: 20px;
+  background-color: #c4efff;
+}
+
+#ta {
+  top: 85px;
+  background-color: #b3dafb;
+}
+
+#tv {
+  top: 150px;
+  background-color: #76e6eb;
+}
+
+#sa {
+  top: 215px;
+  background-color: #d0eaf0
+}
+
+#sv {
+  top: 280px;
+  background-color: #c6ecf4
+}
+
+#da {
+  top: 345px;
+  background-color: #82ccd2
+}
+
+#mv {
+  top: 410px;
+  background-color: #abebdd
+}
+
+
+/* pagina MemoryValidation */
+
+#convalida {
+	font-size:18px;
+	 margin:1%;
+}
+
+#suggerimento {
+	font-size:18px;
+	margin: 1%;
+}
+
+#endGame{
+	font-size:18px;
+	margin: 1%;
+}
+
+#Skip{
+	margin: 0% 0% 0% 4%;
+}
+#erroreConvalida{
+	display:none;
+	color:red;
+	margin:0%;
+	padding:0%;
+}
+
+#labelSuggerimento{
+	display:none;
+	color:green;
+}
+#divSuggerimento{
+	display:none;
+	margin:0% 12% 2%;
+	float:right;
+	width: 70%;
+}
+#open {
+	margin:1% 1% 0% 14%;
+		display:inline;
+		font-size:27px;
+		cursor:pointer;
+		color: darkslateblue;
+}
+
+#open a:hover{
+	background-color: #ffffd5;
+}
+
+#gameLabel{
+	display:inline;
+	font-size:20px;
+	color: darkslateblue;
+}
+/*menu MemoryGame*/
+
+
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0000a0;
+  background-color: rgba(0,0,100, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top:0%;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.overlay2 a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay2 label{
+	  color : white;
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: -12px;
+  right: 45px;
+  font-size: 60px;
+}
+/*
+@media screen and (max-height: 450px) {
+  .overlay2 a {font-size: 20px}
+  .overlay2 .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+*/
+
+#close{		
+		font-size:60px;
+		cursor:pointer;
+		color: white;
+}
+
+#divLevel{
+	display:inline-block;
+	text-align:right;
+	padding : 0% 2%;
+	width:100%;
+}
+
+mark {
+  background-color: #8080ff;
+  color: white;
+  padding : 1.6%;
+}
+
+
+
+/* slider del menu MemoryGame */
+
+
+
+
+#slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #ffffff;
+  outline: none;
+  opacity: 0.9;
+
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#slider:hover {
+  opacity: 1;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+
+
+#iniziaPartita{
+	float:right;
+}
