@@ -1,5 +1,7 @@
 # FabbricaSemantica - Semantic Fabric
 
-Utilities for semantic disambiguation.
+Utilities for semantic disambiguation. Fully written in Java.
 
-Written in Java. Front-ent converted in JS with the library JSweet.
+For the working project: FabbricaSemantica
+
+Frontent written in Java and converted in Javascript with JSweet. For the java source code of the frontend see: FabbricaSemanticaJSweet
